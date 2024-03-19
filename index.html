@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <main>
+
+            <section class="logo">
+                <h1>Encriptador</h1>
+            </section>
+
+            <section class="contenedor-entrada">
+                <textarea class="caja-texto-entrada" id="texto" placeholder="Ingresa el texto aquí"></textarea>
+                <p>&#9888; Solo letras minúsculas y sin acentos</p>
+                <div class="caja-botones">
+                    <button class="btn-encriptar" onclick="encriptar();">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="contenedor-salida">
+                <div class="caja-texto-salida" id="caja-texto-salida">
+                    <img src="img.png" alt="img" class="imagen-sin-texto">
+                    <p class="sin-mensaje" id="sin-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingresa-texto" id="ingresa-texto"> Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="btn-copiar" id="btn-copiar" onclick="copiarTexto();" hidden >Copiar</button>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
